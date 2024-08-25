@@ -6,26 +6,23 @@
     <title>Napoli - Italian Food</title>
     <link rel="shortcut icon" href="favicon/favicon-napoli.ico" type="image/x-icon">
     <link rel="stylesheet" href="style/style.css">
-    <style>
-        
-    </style>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
+        
+        <div>
+            <img id="menu" src="icons/icon-menu.png" alt="Menu Hamburguer" width="50px" onclick="clickMenu()">
+            </div>
         <a href="index.html">
             <img id="logo" src="images/logo-napoli.png" alt="Logo Napoli" width="100px">
         </a>
-        <h1>Italian Food</h1>
-        <div>
-        <img id="menu" src="icons/icon-menu.png" alt="Menu Hamburguer" width="50px" onclick="clickMenu()">
-        </div>
+        
     </header>
     <nav id="menuList">
             <ul>
                 <li><a href="#">Pizzas</a></li>
                 <li><a href="#">Massas</a></li>
                 <li><a href="#">Bebidas</a></li>
-                <li><a href="#">Promoções</a></li>
             </ul>
     </nav>
     <main>
@@ -96,6 +93,14 @@
     </footer>
 
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 450) {
+                menuList.style.display = 'block';
+            } else {
+                menuList.style.display = 'none';
+            }
+        }
+
         function clickMenu() {
             var menuList = document.getElementById('menuList');
             if (menuList.style.display === 'block' || menuList.style.display === '') {

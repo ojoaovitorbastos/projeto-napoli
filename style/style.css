@@ -22,29 +22,30 @@
 
 /* Estilização do header */
 header {
-    background-image: linear-gradient(to bottom, var(--cor3) 10%, var(--verde-italiano));
+    background-image: linear-gradient(to right, var(--cor3), var(--cor2), var(--verde-italiano));
     padding: 10px;
+    max-width: 600px;
+    margin: auto; 
 }
 
 img#logo {
-    margin: 10px;
-}
-
-header > h1 {
-    display: none; /* Oculta o título no header */
+    display: block;
+    margin: auto;
 }
 
 img#menu {
-    display: block;
+    display: inline-block;
     margin: auto;
     cursor: pointer; /* Adiciona cursor pointer para melhorar a interatividade */
 }
 
 /* Estilização do menu de navegação */
 nav {
-    background-color: var(--verde-italiano);
+    background-image: linear-gradient(to right, var(--cor3), var(--cor2), var(--verde-italiano));
     padding: 10px;
     display: none; /* Oculta o menu por padrão em telas menores */
+    max-width: 600px;
+    margin: auto;
 }
 
 nav > ul {
@@ -56,27 +57,23 @@ nav > ul {
 
 nav > ul > li {
     font-size: 1.1em;
-    border: 1px solid var(--cor1);
-    border-radius: 50px; /* Usar 50% para criar círculos */
     width: 100px;
     margin: 0 auto 10px; 
-    padding: 3px;
-    background-color: var(--cor3);
     display: inline-block;
     text-align: center;
-}
-
-nav > ul > li:hover {
-    background-color: var(--dourado);
-    cursor: pointer;
-}
-
-nav > ul > li:active {
-    transform: scale(1.2);
+    padding: 3px;
 }
 
 nav > ul > li > a {
+    padding: 8px 15px;
     color: white;
+    background-color: var(--cor3);
+    border-radius: 50px; /* Usar 50% para criar círculos */
+}
+
+nav > ul > li > a:hover {
+    background-color: var(--dourado);
+    cursor: pointer;
 }
 
 /* Estilização do main */
@@ -85,7 +82,6 @@ main {
     margin: auto;
     padding: 20px;
     background-color: white;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.295);
 }
 
 /* Exibe o menu de navegação em telas maiores */
