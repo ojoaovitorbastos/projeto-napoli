@@ -1,0 +1,99 @@
+/* Reset básico e estilização geral */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none; /* Remove sublinhado de links por padrão */
+}
+
+/* Definição de variáveis de cor */
+:root {
+    --cor1: #0D0D0D;
+    --cor2: #F2F2F2; 
+    --cor3: #A61B0F; 
+    --cor4: #F2C8A2; 
+    --cor5: #717346; 
+
+    --verde-italiano: #007A33;
+    --vermelho-italiano: #C8102E; 
+    --creme: #F6F6F6; 
+    --dourado: #D4AF37; 
+}
+
+/* Estilização do header */
+header {
+    background-image: linear-gradient(to bottom, var(--cor3) 10%, var(--verde-italiano));
+    padding: 10px;
+}
+
+img#logo {
+    margin: 10px;
+}
+
+header > h1 {
+    display: none; /* Oculta o título no header */
+}
+
+img#menu {
+    display: block;
+    margin: auto;
+    cursor: pointer; /* Adiciona cursor pointer para melhorar a interatividade */
+}
+
+/* Estilização do menu de navegação */
+nav {
+    background-color: var(--verde-italiano);
+    padding: 10px;
+    display: none; /* Oculta o menu por padrão em telas menores */
+}
+
+nav > ul {
+    text-align: center;
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0;
+    margin: 0;
+}
+
+nav > ul > li {
+    font-size: 1.1em;
+    border: 1px solid var(--cor1);
+    border-radius: 50px; /* Usar 50% para criar círculos */
+    width: 100px;
+    margin: 0 auto 10px; 
+    padding: 3px;
+    background-color: var(--cor3);
+    display: inline-block;
+    text-align: center;
+}
+
+nav > ul > li:hover {
+    background-color: var(--dourado);
+    cursor: pointer;
+}
+
+nav > ul > li:active {
+    transform: scale(1.2);
+}
+
+nav > ul > li > a {
+    color: white;
+}
+
+/* Estilização do main */
+main {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.295);
+}
+
+/* Exibe o menu de navegação em telas maiores */
+@media screen and (min-width: 450px) {
+    img#menu {
+        display: none;
+    }
+    nav {
+        display: block;
+    }
+}
