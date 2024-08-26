@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+    font-family: cursive, sans-serif;
+}
+
+:root {
+    --cor-delta: #a5a79a;
+    --cor-gamboge: #eca442;
+    --cor-tomato: #ca2521;
+    --cor-pepperoni: #61120e;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor-tomato), var(--cor-pepperoni));
+    color: white;
+    padding: 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.479);
+}
+
+header > h1 {
+    padding-bottom: 5px;
+}
+
+nav {
+    text-align: right;
+}
+
+nav > ul {
+    list-style-type: none;
+}
+
+nav > ul > li {
+    display: inline-block;
+    padding-top: 20px;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--cor-tomato);
+    padding: 2px;
+    border-radius: 8px;
+}
+
+nav > ul > li > a:hover {
+    background-color: var(--cor-gamboge);
+}
+
+#section-pizzas {
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+section.itens {
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    width: 90%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.479);
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+.img-itens {
+    width: 100px;
+}
+
+.bnt-comprar-itens {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: var(--cor-tomato);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px var(--cor-gamboge);
+}
+
+.bnt-comprar-itens:hover {
+    background-color: var(--cor-gamboge);
+    box-shadow: 0px 0px 5px var(--cor-tomato);
+}
+
+footer {
+    background-image: linear-gradient(to bottom, var(--cor-pepperoni), var(--cor-tomato));
+    padding: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.479);
+}
+
+footer a {
+    color: white;
+}
