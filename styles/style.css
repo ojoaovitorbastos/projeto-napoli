@@ -26,15 +26,27 @@ header {
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.479);
     font-family: var(--fonte-nerko);
     font-family: 'Pizzaria', monospace;
+    max-width: 700px;
+    margin: auto;
 }
 
 header > h1 {
     padding-bottom: 5px;
     font-size: 2.4em;
+    display: inline;
 }
 
 header > p {
     font-size: 1.3em;
+}
+
+img.maps {
+    display: inline;
+    width: 50px;
+    padding: 10px;
+    margin-left: 5px;
+    background-color: rgb(37, 211, 102);
+    border-radius: 50%;
 }
 
 nav {
@@ -57,7 +69,7 @@ nav > ul > li > a {
     background-color: var(--cor-tomato);
     padding: 2px;
     border-radius: 8px;
-    font-size: 1.2em;
+    font-size: 1.2em;  
 }
 
 nav > ul > li > a:hover {
@@ -67,6 +79,11 @@ nav > ul > li > a:hover {
 main {
     font-family: 'Pizzaria', monospace;
     font-weight: lighter;
+    max-width: 700px;
+    margin: auto;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.479);
+    padding-top: 30px;
 }
 
 #section-cardapio {
@@ -83,7 +100,7 @@ main {
     width: 300px;
     color: white;
     margin: auto;
-    margin-top: 30px;
+    
 }
 
 section.itens {
@@ -129,7 +146,7 @@ section.itens h2 {
 
 footer {
     background-image: linear-gradient(to bottom, var(--cor-pepperoni), var(--cor-tomato));
-    padding: 20px;
+    padding: 10px;
     color: white;
     text-align: center;
     box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.479);
